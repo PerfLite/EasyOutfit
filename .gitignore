@@ -1,0 +1,14 @@
+.xmake/
+build/
+dist/
+skyrim-outfit-system/
+SkyrimOutfitSystemSE/
+*.vcxproj*
+*.sln
+.vs/
+.vscode/
+*.ipch
+*.log
+*.zip
+*.old
+
