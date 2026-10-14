@@ -38,8 +38,8 @@
 
 ## Управление по умолчанию
 
-- Горячая клавиша быстрого включения / отключения наряда: **`O`** (код клавиши 24 в `EasyOutfit.json`)
-- Открытие меню: через главное меню **SKSE Menu Framework** (по умолчанию клавиша `F10` или через меню паузы).
+- Горячая клавиша быстрого включения / отключения наряда: **`O`** (настраивается в `EasyOutfit.json`)
+- Открытие меню нарядов: через главное меню **SKSE Menu Framework** (по умолчанию клавиша **`F1`** на клавиатуре или **`LB`** на геймпаде, либо через меню паузы).
 
 ---
 
@@ -62,4 +62,8 @@
 - **Transformations Support**: Automatically suppresses outfit overlay while transformed into Werewolf or Vampire Lord form.
 - **Zero Script Lag**: Pure C++ engine hooks, zero Papyrus overhead, completely safe to install or uninstall anytime.
 - **Bilingual**: Supports English and Russian with auto-detection.
+
+### Default Controls:
+- **Toggle Outfit Overlay**: **`O`** (configurable in `EasyOutfit.json`)
+- **Open Menu**: Open **SKSE Menu Framework** (default key is **`F1`** on keyboard, **`LB`** on gamepad, or via the Pause Menu).
 
