@@ -11,4 +11,4 @@ SkyrimOutfitSystemSE/
 *.log
 *.zip
 *.old
-
+deploy*.ps1
