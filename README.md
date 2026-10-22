@@ -1,77 +1,112 @@
-# EasyOutfit
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build and Test](https://github.com/PerfLite/EasyOutfit/actions/workflows/build.yml/badge.svg)](https://github.com/PerfLite/EasyOutfit/actions)
-[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/PerfLite/EasyOutfit/releases)
-[![Language: C++23](https://img.shields.io/badge/Language-C%2B%2B23-f34b7d.svg)](https://en.cppreference.com/w/cpp/23)
-[![Framework: SKSE Menu Framework](https://img.shields.io/badge/Framework-SKSE%20Menu%20Framework-0078D6.svg)](https://www.nexusmods.com/skyrimspecialedition/mods/109867)
-[![Skyrim SE / AE](https://img.shields.io/badge/Skyrim-SE%201.5.97%20%7C%20AE%201.6%2B-555555.svg)](https://skse.silverlock.org/)
-[![Backend: Dear ImGui](https://img.shields.io/badge/Backend-Dear%20ImGui-success.svg)](https://github.com/ocornut/imgui)
+<img src="assets/banner.svg" alt="EasyOutfit" width="100%">
 
-Современный SKSE плагин трансмогрификации (косметической смены экипировки) для **Skyrim Special Edition (1.5.97)** и **Anniversary Edition (1.6+)**.
-Создан с использованием **CommonLibSSE-ng**, **Xbyak** и **SKSE Menu Framework** (ImGui).
+<p>
+  <a href="#english">🇬🇧 English</a> ·
+  <a href="#русский">🇷🇺 Русский</a>
+</p>
 
----
+<p>
+  <img src="https://img.shields.io/github/v/release/PerfLite/EasyOutfit?style=flat-square" alt="release">
+  <img src="https://img.shields.io/github/license/PerfLite/EasyOutfit?style=flat-square" alt="license">
+  <img src="https://img.shields.io/github/languages/top/PerfLite/EasyOutfit?style=flat-square" alt="language">
+  <img src="https://img.shields.io/github/stars/PerfLite/EasyOutfit?style=flat-square" alt="stars">
+  <img src="https://img.shields.io/github/downloads/PerfLite/EasyOutfit/total?style=flat-square" alt="downloads">
+</p>
 
-## Возможности
+<p>
+  <a href="https://github.com/PerfLite/EasyOutfit/releases/latest"><b>⬇️ Download / Скачать</b></a> ·
+  <a href="https://github.com/PerfLite/EasyOutfit/releases">📦 All releases / Все релизы</a>
+</p>
 
-1. **Косметические наряды (Transmog)**:
-   - Сохраняйте любые комбинации брони, шлемов, перчаток, сапог, плащей и щитов как косметические наряды.
-   - Носите броню с лучшими характеристиками, выглядя при этом в любом любимом стиле.
-   - Поддержка создания нескольких пресетов нарядов, их быстрого переключения, дублирования и удаления.
+</div>
 
-2. **Современный оверлейный интерфейс**:
-   - Интеграция в **SKSE Menu Framework** (быстрый доступ через меню модов или по горячей клавише).
-   - Прямой поиск по всей базе брони игры и установленных модов прямо из интерфейса.
-   - Добавление элементов наряда прямо из инвентаря персонажа в один клик.
+## ⬇️ Download / Скачать
 
-3. **Техническая совместимость и стабильность**:
-   - Автоматическое скрытие ванильных мешей при активном наряде через хуки конвейера рендеринга (`ActorWeightModel`).
-   - Сохранение корректных масок слотов тела (`BipedObjectSlot`) для предотвращения клиппинга и невидимости частей тела.
-   - Корректная обработка формы зверя (оборотень / лорд-вампир) — наряд автоматически скрывается при трансформации.
-   - Пресеты сохраняются в `Data/SKSE/Plugins/EasyOutfit_Presets.json` в формате FormID + имя ESP/ESL плагина, что гарантирует сохранность данных при изменениях порядка загрузки.
+| File / Файл | Description / Описание | Link / Ссылка |
+|---|---|---|
+| `EasyOutfit-v1.0.0.zip` | Main mod release (SE & AE) · Основной архив мода (SE и AE) | [Download](https://github.com/PerfLite/EasyOutfit/releases/latest/download/EasyOutfit-v1.0.0.zip) |
 
-4. **Локализация**:
-   - Полная поддержка русского и английского языков (автоопределение языка игры + переключатель в настройках).
+> Older versions and changelogs: [Releases](https://github.com/PerfLite/EasyOutfit/releases) ·
+> Старые версии и список изменений: [Релизы](https://github.com/PerfLite/EasyOutfit/releases)
 
 ---
 
-## Требования / Requirements
+## English
 
+Modern, lightweight transmogrification and visual cosmetic outfit plugin for Skyrim Special Edition and Anniversary Edition (SKSE64). Wear any gear for optimal stats while maintaining your preferred cosmetic appearance.
+
+### Features
+
+- **Seamless transmogrification**: replace the visual look of equipped armor and clothing without losing stats or enchantments.
+- **In-game ImGui overlay**: intuitive interface (toggle with `F10` by default, configurable).
+- **Multi-slot support & presets**: customize head, body, hands, feet, shield, amulets, rings, and switch between presets seamlessly.
+- **Form transformation safety**: automatically suppresses cosmetic overrides during Werewolf (Beast Form) and Vampire Lord transformations.
+- **JSON localization**: simple multi-language support (English, Russian).
+
+### Install
+
+Install using Mod Organizer 2, Vortex, or unpack the archive directly into your Skyrim `Data` directory:
+
+```
+https://github.com/PerfLite/EasyOutfit
+```
+
+**Requirements:**
+- Skyrim Special Edition / Anniversary Edition (`1.5.97`, `1.6.640`, `1.6.1170+`)
 - [SKSE64](https://skse.silverlock.org/)
 - [Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)
-- [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/109867)
+
+### Build
+
+```bash
+xmake f -m release -y
+xmake -y
+```
+
+### License
+
+MIT — see [LICENSE](LICENSE).
+
+<p align="right"><a href="#english">↑ Back to top</a> · <a href="#русский">Русский ↓</a></p>
 
 ---
 
-## Управление по умолчанию
+## Русский
 
-- Горячая клавиша быстрого включения / отключения наряда: **`O`** (настраивается в `EasyOutfit.json`)
-- Открытие меню нарядов: через главное меню **SKSE Menu Framework** (по умолчанию клавиша **`F1`** на клавиатуре или **`LB`** на геймпаде, либо через меню паузы).
+Современный и легковесный SKSE64-плагин трансмогрификации (косметических нарядов) для Skyrim Special Edition и Anniversary Edition. Носите любые доспехи ради защиты и характеристик, сохраняя любимый внешний облик.
 
----
+### Возможности
 
-## Структура файлов
+- **Бесшовный трансмог**: замена визуального вида надетой брони и одежды без потери статов и зачарований.
+- **Внутриигровое меню ImGui**: удобное всплывающее окно управления (открытие по умолчанию по клавише `F10`, настраивается).
+- **Поддержка пресетов и всех слотов**: настройка шлема, кирасы, перчаток, сапог, щита, колец и амулетов с мгновенным переключением.
+- **Совместимость с формами зверя и вампира**: автоматическое отключение визуального слоя при превращении в оборотня или Лорда-вампира.
+- **JSON-локализация**: полная поддержка перевода интерфейса (Русский, English).
 
-- `SKSE/Plugins/EasyOutfit.dll` — плагин SKSE.
-- `SKSE/Plugins/EasyOutfit.json` — конфигурация настроек.
-- `SKSE/Plugins/EasyOutfit_Presets.json` — сохранённые наряды игрока (создаётся автоматически в игре).
+### Установка
 
----
+Установите через Mod Organizer 2, Vortex или распакуйте архив мода напрямую в папку `Data` игры:
 
-# English Description
+```
+https://github.com/PerfLite/EasyOutfit
+```
 
-**EasyOutfit** is a modern, lightweight, script-free transmogrification (cosmetic outfit overlay) SKSE plugin for **Skyrim Special Edition (1.5.97)** and **Anniversary Edition (1.6+)**.
+**Требования:**
+- Skyrim Special Edition / Anniversary Edition (`1.5.97`, `1.6.640`, `1.6.1170+`)
+- [SKSE64](https://skse.silverlock.org/)
+- [Address Library for SKSE Plugins](https://www.nexusmods.com/skyrimspecialedition/mods/32444)
 
-### Features:
-- **Transmogrification**: Wear your best gear for stats while looking however you want.
-- **In-Game ImGui UI**: Powered by [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/109867). Browse, search by name, filter by body slot (head, body, hands, feet, shield, other), or equip items from your inventory.
-- **Multiple Outfits**: Save multiple presets, duplicate, rename, or delete them.
-- **Transformations Support**: Automatically suppresses outfit overlay while transformed into Werewolf or Vampire Lord form.
-- **Zero Script Lag**: Pure C++ engine hooks, zero Papyrus overhead, completely safe to install or uninstall anytime.
-- **Bilingual**: Supports English and Russian with auto-detection.
+### Сборка
 
-### Default Controls:
-- **Toggle Outfit Overlay**: **`O`** (configurable in `EasyOutfit.json`)
-- **Open Menu**: Open **SKSE Menu Framework** (default key is **`F1`** on keyboard, **`LB`** on gamepad, or via the Pause Menu).
+```bash
+xmake f -m release -y
+xmake -y
+```
 
+### Лицензия
+
+MIT — см. [LICENSE](LICENSE).
+
+<p align="right"><a href="#русский">↑ Наверх</a> · <a href="#english">English ↑</a></p>
