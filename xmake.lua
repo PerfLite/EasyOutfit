@@ -20,3 +20,6 @@ target("EasyOutfit")
     add_headerfiles("src/**.h")
     add_includedirs("src")
     set_pcxxheader("src/pch.h")
+
+    add_cxflags("/utf-8")
+    add_syslinks("shell32")

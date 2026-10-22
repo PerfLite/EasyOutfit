@@ -581,16 +581,19 @@ namespace EasyOutfit::UI
         SKSEMenuFramework::igSameLine(0.0f, 10.0f);
         if (SKSEMenuFramework::igButton(cfg.language == "auto" ? "[Auto]" : "Auto", { 0.0f, 0.0f })) {
             cfg.language = "auto";
+            Localization::GetSingleton().Load("auto");
             changed = true;
         }
         SKSEMenuFramework::igSameLine(0.0f, 5.0f);
         if (SKSEMenuFramework::igButton(cfg.language == "ru" ? "[Русский]" : "Русский", { 0.0f, 0.0f })) {
             cfg.language = "ru";
+            Localization::GetSingleton().Load("ru");
             changed = true;
         }
         SKSEMenuFramework::igSameLine(0.0f, 5.0f);
         if (SKSEMenuFramework::igButton(cfg.language == "en" ? "[English]" : "English", { 0.0f, 0.0f })) {
             cfg.language = "en";
+            Localization::GetSingleton().Load("en");
             changed = true;
         }
 

@@ -49,6 +49,12 @@ if (-not (Test-Path -LiteralPath $presetsPath)) {
     Write-Host "[CREATED] $presetsPath" -ForegroundColor Cyan
 }
 
+# 4. Deploy translation JSON files
+Get-ChildItem -Path "$PSScriptRoot\SKSE\Plugins\EasyOutfitStrings*.json" | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination "$destPlugins\$($_.Name)" -Force
+    Write-Host "[DEPLOYED] $($_.Name)" -ForegroundColor Cyan
+}
+
 Write-Host "[SUCCESS] Deployed EasyOutfit to: $target" -ForegroundColor Green
 $dllItem = Get-Item "$destPlugins\EasyOutfit.dll"
 Write-Host "DLL Size: $($dllItem.Length) bytes, LastWriteTime: $($dllItem.LastWriteTime)" -ForegroundColor Green

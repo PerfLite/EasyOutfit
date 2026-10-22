@@ -63,6 +63,10 @@ namespace
         settings.Load();
         Dbg("Settings loaded successfully");
 
+        // 1.1 Localization
+        EasyOutfit::Localization::GetSingleton().Load(settings.GetConfig().language);
+        Dbg("Localization loaded successfully");
+
         // 2. Outfit Manager
         auto& mgr = EasyOutfit::OutfitManager::GetSingleton();
         mgr.Init();

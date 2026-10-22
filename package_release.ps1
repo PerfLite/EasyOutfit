@@ -35,6 +35,11 @@ $defaultConfig = @'
 '@
 [System.IO.File]::WriteAllText("$targetPlugins\EasyOutfit.json", $defaultConfig, [System.Text.Encoding]::UTF8)
 
+# Copy Translation JSON files
+Get-ChildItem -Path "$PSScriptRoot\SKSE\Plugins\EasyOutfitStrings*.json" | ForEach-Object {
+    Copy-Item -LiteralPath $_.FullName -Destination "$targetPlugins\$($_.Name)" -Force
+}
+
 # Create zip archive
 Compress-Archive -Path "$stageDir\*" -DestinationPath $zipPath -Force
 Remove-Item -LiteralPath $stageDir -Recurse -Force
