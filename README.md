@@ -1,5 +1,13 @@
 # EasyOutfit
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build and Test](https://github.com/PerfLite/EasyOutfit/actions/workflows/build.yml/badge.svg)](https://github.com/PerfLite/EasyOutfit/actions)
+[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://github.com/PerfLite/EasyOutfit/releases)
+[![Language: C++23](https://img.shields.io/badge/Language-C%2B%2B23-f34b7d.svg)](https://en.cppreference.com/w/cpp/23)
+[![Framework: SKSE Menu Framework](https://img.shields.io/badge/Framework-SKSE%20Menu%20Framework-0078D6.svg)](https://www.nexusmods.com/skyrimspecialedition/mods/109867)
+[![Skyrim SE / AE](https://img.shields.io/badge/Skyrim-SE%201.5.97%20%7C%20AE%201.6%2B-555555.svg)](https://skse.silverlock.org/)
+[![Backend: Dear ImGui](https://img.shields.io/badge/Backend-Dear%20ImGui-success.svg)](https://github.com/ocornut/imgui)
+
 Современный SKSE плагин трансмогрификации (косметической смены экипировки) для **Skyrim Special Edition (1.5.97)** и **Anniversary Edition (1.6+)**.
 Создан с использованием **CommonLibSSE-ng**, **Xbyak** и **SKSE Menu Framework** (ImGui).
 
