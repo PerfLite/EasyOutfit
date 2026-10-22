@@ -40,7 +40,7 @@ Modern, lightweight transmogrification and visual cosmetic outfit plugin for Sky
 ### Features
 
 - **Seamless transmogrification**: replace the visual look of equipped armor and clothing without losing stats or enchantments.
-- **In-game ImGui overlay**: intuitive interface (toggle with `F10` by default, configurable).
+- **In-game ImGui overlay**: intuitive interface (toggle with `F1` by default, configurable).
 - **Multi-slot support & presets**: customize head, body, hands, feet, shield, amulets, rings, and switch between presets seamlessly.
 - **Form transformation safety**: automatically suppresses cosmetic overrides during Werewolf (Beast Form) and Vampire Lord transformations.
 - **JSON localization**: simple multi-language support (English, Russian).
@@ -80,7 +80,7 @@ MIT — see [LICENSE](LICENSE).
 ### Возможности
 
 - **Бесшовный трансмог**: замена визуального вида надетой брони и одежды без потери статов и зачарований.
-- **Внутриигровое меню ImGui**: удобное всплывающее окно управления (открытие по умолчанию по клавише `F10`, настраивается).
+- **Внутриигровое меню ImGui**: удобное всплывающее окно управления (открытие по умолчанию по клавише `F1`, настраивается).
 - **Поддержка пресетов и всех слотов**: настройка шлема, кирасы, перчаток, сапог, щита, колец и амулетов с мгновенным переключением.
 - **Совместимость с формами зверя и вампира**: автоматическое отключение визуального слоя при превращении в оборотня или Лорда-вампира.
 - **JSON-локализация**: полная поддержка перевода интерфейса (Русский, English).
