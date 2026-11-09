@@ -13,9 +13,11 @@
   <img src="https://img.shields.io/github/languages/top/PerfLite/EasyOutfit?style=flat-square" alt="language">
   <img src="https://img.shields.io/github/stars/PerfLite/EasyOutfit?style=flat-square" alt="stars">
   <img src="https://img.shields.io/github/downloads/PerfLite/EasyOutfit/total?style=flat-square" alt="downloads">
+  <a href="https://www.nexusmods.com/skyrimspecialedition/mods/198594"><img src="https://img.shields.io/badge/Nexus_Mods-EasyOutfit-da8f35?style=flat-square&logo=nexusmods" alt="nexus"></a>
 </p>
 
 <p>
+  <a href="https://www.nexusmods.com/skyrimspecialedition/mods/198594"><b>Nexus Mods</b></a> ·
   <a href="https://github.com/PerfLite/EasyOutfit/releases/latest"><b>⬇️ Download / Скачать</b></a> ·
   <a href="https://github.com/PerfLite/EasyOutfit/releases">📦 All releases / Все релизы</a>
 </p>
@@ -26,7 +28,7 @@
 
 | File / Файл | Description / Описание | Link / Ссылка |
 |---|---|---|
-| `EasyOutfit-v1.0.0.zip` | Main mod release (SE & AE) · Основной архив мода (SE и AE) | [Download](https://github.com/PerfLite/EasyOutfit/releases/latest/download/EasyOutfit-v1.0.0.zip) |
+| `EasyOutfit-v1.0.0.zip` | Main mod release (SE & AE) · Основной архив мода (SE и AE) | [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198594) · [GitHub](https://github.com/PerfLite/EasyOutfit/releases/latest/download/EasyOutfit-v1.0.0.zip) |
 
 > Older versions and changelogs: [Releases](https://github.com/PerfLite/EasyOutfit/releases) ·
 > Старые версии и список изменений: [Релизы](https://github.com/PerfLite/EasyOutfit/releases)
@@ -56,10 +58,10 @@ A native C++ SKSE64 plugin powered by [CommonLibSSE-ng](https://github.com/Charm
 
 #### Steps
 
-Install `EasyOutfit-v1.0.0.zip` using your mod manager (**Mod Organizer 2** or **Vortex**), or unpack the archive directly into your Skyrim `Data` directory:
+Install `EasyOutfit-v1.0.0.zip` via [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198594) using your mod manager (**Mod Organizer 2** or **Vortex**), or unpack the archive directly into your Skyrim `Data` directory:
 
 ```
-https://github.com/PerfLite/EasyOutfit
+https://www.nexusmods.com/skyrimspecialedition/mods/198594
 ```
 
 ### Build
@@ -107,10 +109,10 @@ MIT — see [LICENSE](LICENSE).
 
 #### Шаги
 
-Установите `EasyOutfit-v1.0.0.zip` через ваш мод-менеджер (**Mod Organizer 2** или **Vortex**) либо распакуйте архив мода напрямую в папку `Data` игры:
+Установите `EasyOutfit-v1.0.0.zip` со страницы [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198594) через ваш мод-менеджер (**Mod Organizer 2** или **Vortex**) либо распакуйте архив мода напрямую в папку `Data` игры:
 
 ```
-https://github.com/PerfLite/EasyOutfit
+https://www.nexusmods.com/skyrimspecialedition/mods/198594
 ```
 
 ### Сборка
