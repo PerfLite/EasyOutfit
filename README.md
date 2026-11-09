@@ -69,6 +69,13 @@ xmake f -m release -y
 xmake -y
 ```
 
+### Credits
+
+- [David J. Cobb](https://github.com/DavidJCobb/skyrim-outfit-system) — for the original *Skyrim Outfit System* and reverse-engineering the skinning hooks.
+- [aers](https://github.com/aers/SkyrimOutfitSystemSE) — for the original Skyrim SE port of the outfit hooks.
+- [gottyduke](https://www.nexusmods.com/skyrimspecialedition/mods/120352) — for [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/120352) and ImGui integration.
+- [CharmedBaryon](https://github.com/CharmedBaryon) — for [CommonLibSSE-ng](https://github.com/CharmedBaryon/CommonLibSSE-ng).
+
 ### License
 
 MIT — see [LICENSE](LICENSE).
@@ -112,6 +119,13 @@ https://github.com/PerfLite/EasyOutfit
 xmake f -m release -y
 xmake -y
 ```
+
+### Благодарности
+
+- [David J. Cobb](https://github.com/DavidJCobb/skyrim-outfit-system) — за оригинальный *Skyrim Outfit System* и реверс-инжиниринг хуков подмены брони.
+- [aers](https://github.com/aers/SkyrimOutfitSystemSE) — за портирование хуков под Skyrim Special Edition.
+- [gottyduke](https://www.nexusmods.com/skyrimspecialedition/mods/120352) — за [SKSE Menu Framework](https://www.nexusmods.com/skyrimspecialedition/mods/120352) и интеграцию ImGui.
+- [CharmedBaryon](https://github.com/CharmedBaryon) — за библиотеку [CommonLibSSE-ng](https://github.com/CharmedBaryon/CommonLibSSE-ng).
 
 ### Лицензия
 
